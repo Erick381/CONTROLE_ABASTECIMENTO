@@ -1,0 +1,197 @@
+/* ================================
+   RESET E PADRÕES GERAIS
+=================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+}
+
+/* ================================
+   LAYOUT
+=================================== */
+
+.container-center {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* ================================
+   TOPBAR
+=================================== */
+
+.topbar {
+    width: 100%;
+    background: #1a73e8;
+    padding: 15px 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* ================================
+   CARD
+=================================== */
+
+.card {
+    background: white;
+    padding: 25px;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000015;
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ================================
+   FORMULÁRIOS
+=================================== */
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d0d7e2;
+    margin-bottom: 15px;
+    font-size: 15px;
+    background: #fff;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* ================================
+   BOTÕES
+=================================== */
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    background: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #155fc0;
+}
+
+.btn-small {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #1a73e8;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.btn-danger {
+    background: #d9534f;
+}
+
+.btn-danger:hover {
+    background: #b94744;
+}
+
+/* ================================
+   LISTAS
+=================================== */
+
+.list {
+    margin-top: 20px;
+}
+
+.item {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px #00000010;
+}
+
+.item h4 {
+    margin-bottom: 8px;
+}
+
+/* ================================
+   IMAGENS
+=================================== */
+
+.foto-odometro {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* ================================
+   LINKS
+=================================== */
+
+.text-center {
+    text-align: center;
+}
+
+.link {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.link a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ================================
+   RESPONSIVIDADE
+=================================== */
+
+@media (max-width: 480px) {
+    .card {
+        width: 90%;
+    }
+
+    .page {
+        padding: 15px;
+    }
+}

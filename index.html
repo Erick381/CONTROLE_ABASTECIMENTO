@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FuelProof - Login</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="container-center">
+
+        <div class="card">
+            <h2>FuelProof</h2>
+
+            <form id="loginForm">
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Digite seu email">
+
+                <label>Senha</label>
+                <input type="password" id="senha" placeholder="Digite sua senha">
+
+                <button type="submit" class="btn">Entrar</button>
+            </form>
+
+            <p class="link">Não tem conta? <a href="#">Criar conta</a></p>
+        </div>
+
+    </div>
+
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/auth.js"></script>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const senha = document.getElementById('senha').value;
+            login(email, senha);
+        });
+    </script>
+</body>
+</html>
